@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactate con nosotros - Habla Conmigo!</title>
+    <!-- CSS Normalize -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- CSS Custom-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9514dd5057.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo"><a href="../index.html">
+                <img src="../assets/images/logo.webp" alt="Logo Habla Conmigo">
+            </a>
+        </div>
+        <div class="navbar-list__container">
+            <ul class="navbar-list">
+                <li class="navbar-list__item"><a href="../index.html">Inicio</a></li>
+                <li class="navbar-list__item"><a href="community.html">Comunidad</a></li>
+                <li class="navbar-list__item"><a href="about-us.html">Nosotros</a></li>
+                <li class="navbar-list__item active"><a href="#">Contacto</a></li>
+            </ul>
+            <div class="button-download__container">
+                <a class="button-download"
+                    href="https://play.google.com/store/apps/details?id=io.kodular.tinchoz8426.HablaConmigo"
+                    target="_blank">Descargar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-contact">
+            <div class="title-contact">
+                <h2>Conectate con nosotros</h2>
+            </div>
+            <svg class="geometry-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#e6c233" fill-opacity="1"
+                    d="M0,160L48,165.3C96,171,192,181,288,181.3C384,181,480,171,576,144C672,117,768,75,864,96C960,117,1056,203,1152,240C1248,277,1344,267,1392,261.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <a href="#form"><i class="fas fa-chevron-down fa-3x"></i></a>
+    </header>
+
+    <!-- FORM -->
+    <section class="section-form">
+        <div class="form-container">
+            <h2 class="form-title" id="form">¿Tienes preguntas?</h2>
+            <p class="form-paragraph">Si necesitás contactarnos para realizar alguna consulta o simplemente para dejar
+                tu comentario, sentite libre de hacerlo.</p>
+            <div class="supercontainer">
+                <form class="form-habla-conmigo" action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST">
+                    <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" required>
+                    <input type="email" name="Correo electronico" placeholder="Correo electrónico" required>
+                    <input type="tel" name="Telefono" placeholder="Teléfono" required>
+                    <textarea name="Mensaje" class="form-textarea" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea>
+                    <div class="form-buttons">
+                        <button class="reset-button" type="reset">Limpiar</button>
+                        <button class="submit-button" type="submsit">Enviar</button>
+                    </div>
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Contacto generico">
+                    <input type="hidden" name="_next" value="https://www.google.com/">
+                </form>
+            </div>
+        </div>
+        <svg class="form__geometry-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#e6c233" fill-opacity="1"
+                d="M0,224L48,197.3C96,171,192,117,288,133.3C384,149,480,235,576,266.7C672,299,768,277,864,272C960,267,1056,277,1152,288C1248,299,1344,309,1392,314.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer-contact">
+        <div class="footer-container">
+            <div class="footer-image">
+                <img src="../assets/images/logo.webp" alt="Logo">
+            </div>
+            <div class="footer-list__container">
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="community.html">Comunidad</a></li>
+                    <li class="footer-list__item"><a href="about-us.html">Nosotros</a></li>
+                    <li class="footer-list__item"><a href="contact.html">Contacto</a></li>
+                    <li class="footer-list__item"><a
+                            href="https://play.google.com/store/apps/details?id=io.kodular.tinchoz8426.HablaConmigo"
+                            target="_blank">Descargar</a></li>
+                </ul>
+            </div>
+            <div class="footer-social__container">
+                <ul class="footer-social">
+                    <li class="footer-social__item">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p> Todos los derechos reservados. Habla Conmigo! 2021 &copy;</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- Javascript Custom -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
