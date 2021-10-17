@@ -855,12 +855,6 @@ footer{
 .team-title p{
     font-size: 1.5rem;
 }
-.features__geometry-orange{
-    position: relative;
-    bottom: 0;
-    left: 0;
-    z-index: -10;
-}
 .team-cards-container{
     display: flex;
     justify-content: center;
