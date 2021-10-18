@@ -1093,4 +1093,54 @@ footer{
         margin-right: auto;
         width: 70%;
     }
+    .guide-title h2{
+        font-size: 2rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .external-guide-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+        padding-top: 0;
+    }
+    .institute-container, 
+    .download-guide-container{
+        width: 50%;
+    }
+    .next-features-title h2{
+        font-size: 2rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .next-features-list{
+        padding-left: 0;
+        font-size: 1.2rem;
+    }
+    .need-you-title h2{
+        font-size: 2rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .need-you-list{
+        font-size: 1.2rem;
+    }
+    .need-you__paragraph{
+        width: 85%;
+    }
+    .need-you__form-container{
+        width: 80%;
+    }
+    .form-title{
+        font-size: 1.5rem;
+    }
+    .form-paragraph__your-testimony{
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+    .your-testimony__form-container {
+        width: 100%;
+    }
 }
