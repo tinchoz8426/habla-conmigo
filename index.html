@@ -24,6 +24,7 @@
             </a>
         </div>
         <div class="navbar-list__container">
+            <i class="fas fa-times" onclick="hideNav()"></i>
             <ul class="navbar-list">
                 <li class="navbar-list__item active"><a href="#">Inicio</a></li>
                 <li class="navbar-list__item"><a href="pages/community.html">Comunidad</a></li>
@@ -36,6 +37,7 @@
                     target="_blank">Descargar</a>
             </div>
         </div>
+        <i class="fas fa-bars" onclick="showNav()"></i>
     </nav>
 
     <!-- HEADER -->
@@ -159,7 +161,7 @@
                     target="_blank"> <i class="fas fa-long-arrow-alt-down"></i> Descargar</a>
             </div>
         </div>
-        <div style="height: 150px;">
+        <div class="shape-orange__slider">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none">
                 <path d="M0.00,49.98 C149.99,150.00 286.96,-39.95 500.00,49.98 L501.97,-5.42 L0.00,0.00 Z"
                     style="stroke: none; fill: #e6c233;"></path>
@@ -235,19 +237,22 @@
             <div class="footer-social__container">
                 <ul class="footer-social">
                     <li class="footer-social__item">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/hablaconmigoasistente" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/martin.z77" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/tinchoz8426" target="_blank"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/channel/UCPsniHlxnUU750ONef0QDcQ"><i class="fab fa-youtube"
+                                target="_blank"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/tinchoz8426" target="_blank"><i class="fab fa-github"></i></a>
                     </li>
                 </ul>
             </div>
@@ -262,15 +267,29 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // slidesPerGroup: 3,
             loop: true,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
             },
             loopFillGroupWithBlank: true,
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            }
         });
     </script>
     <!-- Javascript Custom -->

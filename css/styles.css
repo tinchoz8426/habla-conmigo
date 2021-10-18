@@ -20,6 +20,10 @@
 
 /* -----PAGINA INICIO----- */
 /* ---NAVBAR--- */
+nav .fa-times,
+nav .fa-bars{
+    display: none;
+}
 .active{
     font-weight: bold;
 }
@@ -242,6 +246,7 @@ nav.sticky a{
 .support-container{
     background-color: var(--color-orange);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 3rem;
 }
@@ -269,7 +274,6 @@ nav.sticky a{
     flex-direction: column;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2px);
     border-radius: 16px;
     padding: 25px 30px;
     width: 40%;
@@ -312,7 +316,7 @@ nav.sticky a{
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -343,6 +347,9 @@ nav.sticky a{
     margin-left: auto;
     margin-right: auto;
 }
+.shape-orange__slider{
+    height: 150px;
+}
 
 /* ---FOOTER--- */
 footer{
@@ -350,6 +357,7 @@ footer{
 }
 .footer-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -967,4 +975,100 @@ footer{
 }
 .sponsor-logo:hover img{
    transform: scale(1.02);
+}
+
+
+
+
+/* -----MEDIA QUERIES----- */
+@media only screen and (max-width: 850px) { 
+    .navbar-list__container{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(190, 190, 190);
+        top: 0;
+        right: -110%;
+        z-index: 100;
+        transition: all 0.5s linear;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .navbar-list{
+        flex-direction: column;
+        padding: 0;
+    }
+    .navbar-list__item{
+        padding: 3rem 0;
+    }
+    nav i.fa-bars{
+        display: block;
+        padding-right: 2rem;
+        font-size: 1.8rem;
+    }
+    nav i.fa-times{
+        display: block;
+        align-self: flex-end;
+        padding-right: 2rem;
+        font-size: 1.8rem;
+    }
+    .iframe-youtube{
+        width: auto;
+    }
+    .footer-list__item{
+        padding: 0 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .header-flexbox{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-text{
+        align-items: center;
+        padding-left: 0;
+        width: 80%;
+    }
+    .header-text p{
+        margin-top: 0;
+        text-align: center;
+    }
+    .header-image img{
+        width: 60%;
+    }
+    .features-container{
+        padding: 0;
+    }
+    .features-images{
+        padding-bottom: 1rem;
+    }
+    .feature-list__image{
+        display: none;
+    }
+    .feature-images__item{
+        width: 40%;
+    }
+    .features-list__text{
+        max-width: 80%;
+    }
+    .video-title{
+        padding-top: 1rem;
+    }
+    .support-container{
+        row-gap: 2rem;
+    }
+    .donation-container,
+    .downloadapp-container{
+        width: 70%;
+    }
+    .slider-title{
+        padding-top: 0;
+    }
+    .shape-orange__slider{
+        height: 5rem;
+    }
+    .slider-paragraph{
+        width: 85%;
+    }
 }
