@@ -1,7 +1,7 @@
 const buttonAboutUs = document.getElementById("button-about-us");
-const buttonContactForm = document.getElementById("button-contact-form");
+// const buttonContactForm = document.getElementById("button-contact-form");
 const teamSection = document.querySelector("#team-section");
-const formSection = document.querySelector("#form");
+// const formSection = document.querySelector("#form");
 const navbarList = document.querySelector(".navbar-list__container");
 
 //Navbar
@@ -18,12 +18,12 @@ function showNav(){
 
 
 
-
-buttonContactForm.addEventListener('click', function () {
-    formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-})
+//Button scroll Form contact
+// buttonContactForm.addEventListener('click', () => {
+//     formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+// })
 //Button scroll Team
-buttonAboutUs.addEventListener('click', function () {
+buttonAboutUs.addEventListener('click', () => {
     teamSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 })
 

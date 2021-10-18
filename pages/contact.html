@@ -27,7 +27,7 @@
                 <li class="navbar-list__item"><a href="../index.html">Inicio</a></li>
                 <li class="navbar-list__item"><a href="community.html">Comunidad</a></li>
                 <li class="navbar-list__item"><a href="about-us.html">Nosotros</a></li>
-                <li class="navbar-list__item active"><a href="contact.html">Contacto</a></li>
+                <li class="navbar-list__item active"><a href="#">Contacto</a></li>
             </ul>
             <div class="button-download__container">
                 <a class="button-download"
@@ -64,7 +64,8 @@
                     <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" required>
                     <input type="email" name="Correo electronico" placeholder="Correo electrónico" required>
                     <input type="tel" name="Telefono" placeholder="Teléfono" required>
-                    <textarea name="Mensaje" class="form-textarea" cols="30" rows="10" placeholder="Escribe tu consulta" required></textarea>
+                    <textarea name="Mensaje" class="form-textarea" cols="30" rows="10" placeholder="Escribe tu consulta"
+                        required></textarea>
                     <div class="form-buttons">
                         <button class="reset-button" type="reset">Limpiar</button>
                         <button class="submit-button" type="submsit">Enviar</button>
@@ -72,7 +73,7 @@
                     <input type="hidden" name="_template" value="table">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Contacto generico">
-                    <input type="hidden" name="_next" value="https://www.google.com/">
+                    <input type="hidden" name="_next" value="https://hablaconmigo.com.ar/pages/contact.html">
                 </form>
             </div>
         </div>
@@ -82,7 +83,7 @@
             </path>
         </svg>
     </section>
-    
+
     <!-- FOOTER -->
     <footer class="footer-contact">
         <div class="footer-container">
@@ -102,19 +103,20 @@
             <div class="footer-social__container">
                 <ul class="footer-social">
                     <li class="footer-social__item">
-                        <a href="https://www.facebook.com/hablaconmigoasistente"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/hablaconmigoasistente" target="_blank"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="https://www.instagram.com/martin.z77"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/martin.z77" target="_blank"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="https://twitter.com/tinchoz8426"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/tinchoz8426" target="_blank"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="https://www.youtube.com/channel/UCPsniHlxnUU750ONef0QDcQ"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/channel/UCPsniHlxnUU750ONef0QDcQ" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="https://github.com/tinchoz8426"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/tinchoz8426" target="_blank"><i class="fab fa-github"></i></a>
                     </li>
                 </ul>
             </div>
@@ -127,6 +129,14 @@
     <!-- SCRIPTS -->
     <!-- Javascript Custom -->
     <script src="../js/main.js"></script>
+
+    <script>
+        const buttonContactForm = document.getElementById("button-contact-form")
+        const formSection = document.querySelector("#form");
+        buttonContactForm.addEventListener('click', () => {
+            formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        })
+    </script>
 </body>
 
 </html>
