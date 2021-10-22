@@ -16,12 +16,6 @@ function showNav(){
     navbarList.style.right = "0";
 }
 
-
-
-//Button scroll Form contact
-// buttonContactForm.addEventListener('click', () => {
-//     formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-// })
 //Button scroll Team
 buttonAboutUs.addEventListener('click', () => {
     teamSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
