@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Comunidad - Habla Conmigo!</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDDMD9E20V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NDDMD9E20V');
+    </script>
     <!-- CSS Normalize -->
     <link rel="stylesheet" href="../css/normalize.css">
     <!-- CSS Custom-->
@@ -14,6 +23,24 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9514dd5057.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -249,7 +276,7 @@
             </div>
             <div class="need-you__form-container">
                 <h2 class="form-title">Aca te dejamos el formulario</h2>
-                <form class="form-habla-conmigo" action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST">
+                <form onsubmit="return submitForm(this);" class="form-habla-conmigo" action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST">
                     <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" required>
                     <input type="email" name="Correo electronico" placeholder="Correo electrónico" required>
                     <select name="Trabajo" required>
@@ -291,12 +318,13 @@
                 <h2 class="form-title">¿Te gustaría que tu testimonio esté aquí?
                 </h2>
                 <p class="form-paragraph__your-testimony">
-                    ¡Nos encantaría mostrar tu historia usando Habla Conmigo! Contanos un poco sobre vos, que opinas sobre la
+                    ¡Nos encantaría mostrar tu historia usando Habla Conmigo! Contanos un poco sobre vos, que opinas
+                    sobre la
                     aplicacion, que uso le das y si queres podes enviarnos una foto. 📷
                 </p>
             </div>
             <div class="your-testimony__form-container">
-                <form class="form-habla-conmigo" action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST"
+                <form onsubmit="return submitForm(this);" class="form-habla-conmigo" action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST"
                     enctype="multipart/form-data">
                     <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" required>
                     <input type="email" name="Correo electronico" placeholder="Correo electrónico" required>
@@ -345,16 +373,19 @@
             <div class="footer-social__container">
                 <ul class="footer-social">
                     <li class="footer-social__item">
-                        <a href="https://www.facebook.com/hablaconmigoasistente" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/hablaconmigoasistente" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="https://www.instagram.com/martin.z77" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/martin.z77" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                     </li>
                     <li class="footer-social__item">
                         <a href="https://twitter.com/tinchoz8426" target="_blank"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li class="footer-social__item">
-                        <a href="https://www.youtube.com/channel/UCPsniHlxnUU750ONef0QDcQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/channel/UCPsniHlxnUU750ONef0QDcQ" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
                     </li>
                     <li class="footer-social__item">
                         <a href="https://github.com/tinchoz8426" target="_blank"><i class="fab fa-github"></i></a>
@@ -370,6 +401,8 @@
     <!-- SCRIPTS -->
     <!-- Javascript Custom -->
     <script src="../js/main.js"></script>
+    <!-- CDN Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

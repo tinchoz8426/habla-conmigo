@@ -21,3 +21,24 @@ buttonAboutUs.addEventListener('click', () => {
     teamSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 })
 
+//Envio de formulario MODAL
+function submitForm(form) {
+    Swal.fire({
+        title: 'Tu consulta ha sido enviada con éxito.',
+        text: 'Nos pondremos en contacto a la brevedad.',
+        imageUrl: '../assets/images/consulta-enviada-con-exito.gif',
+        imageWidth: 200,
+        imageHeight: 150,
+        imageAlt: 'Consulta enviada',
+        width: '45em',
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+    })
+        .then((isOk) => {
+            if (isOk) {
+                form.submit();
+            }
+        });
+    return false
+}
