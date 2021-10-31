@@ -9,17 +9,19 @@ window.addEventListener('scroll', function () {
     let header = this.document.querySelector("nav");
     header.classList.toggle("sticky", window.scrollY > 10)
 })
-function hideNav(){
+function hideNav() {
     navbarList.style.right = "-110%";
 }
-function showNav(){
+function showNav() {
     navbarList.style.right = "0";
 }
 
 //Button scroll Team
-buttonAboutUs.addEventListener('click', () => {
-    teamSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-})
+if (buttonAboutUs) {
+    buttonAboutUs.addEventListener('click', () => {
+        teamSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    })
+}
 
 //Envio de formulario MODAL
 function submitForm(form) {
