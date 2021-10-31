@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Contactate con nosotros - Habla Conmigo!</title>
+    <title>Aplicación online - Habla Conmigo!</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDDMD9E20V"></script>
     <script>
@@ -53,9 +53,9 @@
             <ul class="navbar-list">
                 <li class="navbar-list__item"><a href="../index.html">Inicio</a></li>
                 <li class="navbar-list__item"><a href="community.html">Comunidad</a></li>
-                <li class="navbar-list__item"><a href="app.html">Aplicación</a></li>
+                <li class="navbar-list__item active"><a href="#">Aplicación</a></li>
                 <li class="navbar-list__item"><a href="about-us.html">Nosotros</a></li>
-                <li class="navbar-list__item active"><a href="#">Contacto</a></li>
+                <li class="navbar-list__item"><a href="contact.html">Contacto</a></li>
             </ul>
             <div class="button-download__container">
                 <a class="button-download"
@@ -68,9 +68,21 @@
 
     <!-- HEADER -->
     <header>
-        <div class="header-contact">
-            <div class="title-contact">
-                <h2>Conectate con nosotros</h2>
+        <div class="header-app">
+            <div class="app-container">
+                <form class="form-app" action="#">
+                    <h2>Texto a voz</h2>
+                    <div class="message-container">
+                        <label for="message-app">Ingresa tu mensaje</label>
+                        <textarea class="textarea-app" id="message-app" cols="30" rows="10" placeholder="Recorda que podes usar emojis.🎉"></textarea>
+                    </div>
+                    <div class="languaje-container">
+                        <label for="languaje-select">Selecciona tu idioma</label>
+                        <select class="languaje-select" id="languaje-select">
+                        </select>
+                    </div>
+                    <button class="button-converter" id="button-converter">Convertir a voz</button>
+                </form>
             </div>
             <svg class="geometry-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#e6c233" fill-opacity="1"
@@ -78,43 +90,10 @@
                 </path>
             </svg>
         </div>
-        <a id="button-contact-form"><i class="fas fa-chevron-down fa-3x"></i></a>
     </header>
 
-    <!-- FORM -->
-    <section class="section-form">
-        <div class="form-container">
-            <h2 class="form-title" id="form">¿Tienes preguntas?</h2>
-            <p class="form-paragraph">Si necesitás contactarnos para realizar alguna consulta o simplemente para dejar
-                tu comentario, sentite libre de hacerlo.</p>
-            <div class="supercontainer">
-                <form onsubmit="return submitForm(this)" class="form-habla-conmigo"
-                    action="https://formsubmit.co/tinchoz8426@gmail.com" method="POST">
-                    <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" required>
-                    <input type="email" name="Correo electronico" placeholder="Correo electrónico" required>
-                    <input type="tel" name="Telefono" placeholder="Teléfono" required>
-                    <textarea name="Mensaje" class="form-textarea" cols="30" rows="10" placeholder="Escribe tu consulta"
-                        required></textarea>
-                    <div class="form-buttons">
-                        <button class="reset-button" type="reset">Limpiar</button>
-                        <button class="submit-button" type="submsit">Enviar</button>
-                    </div>
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Contacto generico">
-                    <input type="hidden" name="_next" value="https://hablaconmigo.com.ar/pages/contact.html">
-                </form>
-            </div>
-        </div>
-        <svg class="form__geometry-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#e6c233" fill-opacity="1"
-                d="M0,224L48,197.3C96,171,192,117,288,133.3C384,149,480,235,576,266.7C672,299,768,277,864,272C960,267,1056,277,1152,288C1248,299,1344,309,1392,314.7L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-            </path>
-        </svg>
-    </section>
-
     <!-- FOOTER -->
-    <footer class="footer-contact">
+    <footer>
         <div class="footer-container">
             <div class="footer-image">
                 <img src="../assets/images/logo.webp" alt="Logo">
@@ -161,15 +140,7 @@
     <!-- SCRIPTS -->
     <!-- Javascript Custom -->
     <script src="../js/main.js"></script>
-    <script>
-        const buttonContactForm = document.getElementById("button-contact-form")
-        const formSection = document.querySelector("#form");
-        buttonContactForm.addEventListener('click', () => {
-            formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        })
-    </script>
-    <!-- CDN Sweet Alert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
